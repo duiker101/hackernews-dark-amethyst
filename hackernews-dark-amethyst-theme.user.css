@@ -1,0 +1,103 @@
+/* ==UserStyle==
+@name        HackerNews Dark Amethyst
+@namespace   duiker101
+@version     1.0.0
+@homepageURL https://github.com/duiker101/hackernews-dark-amethyst
+@updateURL   https://raw.githubusercontent.com/duiker101/hackernews-dark-amethyst/trunk/hackernews-dark-amethyst-theme.user.css
+@author      duiker101
+==/UserStyle== */
+
+@-moz-document domain("news.ycombinator.com") {
+
+    :root {
+        --green: rgba(80, 250, 123, 0.8);
+        --magento: rgba(255, 121, 198, 0.8);
+        --blue: rgba(139, 233, 253, 1);
+        --blue-border: rgba(189, 147, 249, 1);
+        --bg-grey: rgba(40, 42, 54, 1);
+        --bg-greyest: rgba(68, 71, 90, 1);
+        --bg-grey2: rgba(98, 114, 164, 1);
+        --bg-grey2-hover: rgb(68, 71, 90);
+        --bg-side: rgba(40, 42, 54, 1);
+        --red: rgba(255, 85, 85, 1);
+        --title-yellow: rgba(255, 184, 108, 1);
+        --title-yellow2: rgba(255, 184, 108, 0.7);
+        --highlight-yellow: rgba(255, 184, 108, 1);
+        --text-grey: rgba(248, 248, 242, 0.7);
+        --text-grey2: rgba(248, 248, 242, 1);
+        --visited-yellow: rgb(145 116 94 / 50%);
+        --button-text: rgba(255, 184, 108, 0.7);
+    }
+    html,
+    body {
+        font-family: Roboto, Consolas, Ubuntu, sans-serif;
+        background-color: var(--bg-greyest);
+        font-size: 12px;
+        color: var(--text-grey);
+    }
+    a:link {
+        color: var(--blue);
+    }
+    .default {
+        font-family: inherit;
+    }
+    .pagetop a:link {
+        color: black;
+    }
+    td {
+        font-family: inherit;
+    }
+    p {
+        margin: 0.3em auto;
+    }
+    #hnmain {
+        background: var(--bg-grey);
+    }
+    .spacer {
+        height: 1em !important;
+    }
+    .title {
+        font-family: inherit;
+        font-size: 13px;
+    }
+    .storylink:link {
+        color: var(--title-yellow);
+    }
+    a:visited {
+        color: var(--visited-yellow);
+    }
+    .subtext {
+        font-family: inherit;
+    }
+    .subtext a:link {
+        color: var(--blue);
+    }
+    .subtext .hnuser:link,
+    .comhead a:link,
+    .subtext a:visited {
+        color: var(--magento);
+    }
+    .age a:link,
+    .age a:visited {
+        color: var(--green);
+    }
+    .comment {
+        font-family: inherit;
+        font-size: 1em;
+    }
+    .c00,
+    .c5a {
+        color: var(--text-grey);
+    }
+    .c00 a:link {
+        color: var(--blue);
+    }
+    .yclinks,
+    .yclinks a:link {
+        color: var(--blue);
+        font-size: 0.875em;
+    }
+    .subtext {
+        font-size: 12px;
+    }
+}
